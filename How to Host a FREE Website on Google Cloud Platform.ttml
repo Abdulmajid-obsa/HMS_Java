@@ -1,0 +1,493 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<tt xml:lang="en" xmlns="http://www.w3.org/ns/ttml" xmlns:ttm="http://www.w3.org/ns/ttml#metadata" xmlns:tts="http://www.w3.org/ns/ttml#styling" xmlns:ttp="http://www.w3.org/ns/ttml#parameter" ttp:profile="http://www.w3.org/TR/profile/sdp-us" >
+<head>
+<styling>
+<style xml:id="s1" tts:textAlign="center" tts:extent="90% 90%" tts:origin="5% 5%" tts:displayAlign="after"/>
+<style xml:id="s2" tts:fontSize=".72c" tts:backgroundColor="black" tts:color="white"/>
+</styling>
+<layout>
+<region xml:id="r1" style="s1"/>
+</layout>
+</head>
+<body region="r1">
+<div>
+<p begin="00:00:00.080" end="00:00:03.040" style="s2">hey everyone this is tony teaches tech</p>
+<p begin="00:00:01.760" end="00:00:04.480" style="s2">i&#39;m tony and in this video i&#39;m going to</p>
+<p begin="00:00:03.040" end="00:00:05.279" style="s2">show you how to set up a wordpress</p>
+<p begin="00:00:04.480" end="00:00:08.000" style="s2">website</p>
+<p begin="00:00:05.279" end="00:00:09.280" style="s2">on the google cloud platform for free</p>
+<p begin="00:00:08.000" end="00:00:11.280" style="s2">that&#39;s right free hosting</p>
+<p begin="00:00:09.280" end="00:00:13.120" style="s2">free storage space and free bandwidth</p>
+<p begin="00:00:11.280" end="00:00:14.719" style="s2">every single month restrictions apply</p>
+<p begin="00:00:13.120" end="00:00:16.000" style="s2">i&#39;ll get into those in the video but the</p>
+<p begin="00:00:14.719" end="00:00:17.840" style="s2">point here is that you can get started</p>
+<p begin="00:00:16.000" end="00:00:20.560" style="s2">with the google cloud platform</p>
+<p begin="00:00:17.840" end="00:00:22.320" style="s2">without spending a dime now i&#39;ll be the</p>
+<p begin="00:00:20.560" end="00:00:24.000" style="s2">first to admit that the restrictions</p>
+<p begin="00:00:22.320" end="00:00:25.439" style="s2">we&#39;re working with are pretty tight</p>
+<p begin="00:00:24.000" end="00:00:28.320" style="s2">the server is going to have less than</p>
+<p begin="00:00:25.439" end="00:00:28.720" style="s2">one gigabyte of ram about 30 gigabytes</p>
+<p begin="00:00:28.320" end="00:00:31.519" style="s2">of</p>
+<p begin="00:00:28.720" end="00:00:32.160" style="s2">storage space and one gigabyte of</p>
+<p begin="00:00:31.519" end="00:00:34.559" style="s2">monthly</p>
+<p begin="00:00:32.160" end="00:00:36.399" style="s2">transfer but as long as you stay within</p>
+<p begin="00:00:34.559" end="00:00:39.600" style="s2">those restrictions your website</p>
+<p begin="00:00:36.399" end="00:00:40.079" style="s2">is literally free forever so let&#39;s go</p>
+<p begin="00:00:39.600" end="00:00:43.040" style="s2">ahead</p>
+<p begin="00:00:40.079" end="00:00:44.719" style="s2">and take a look at how we do this i have</p>
+<p begin="00:00:43.040" end="00:00:47.640" style="s2">already signed up for my google cloud</p>
+<p begin="00:00:44.719" end="00:00:49.760" style="s2">platform account and i&#39;m logged in at</p>
+<p begin="00:00:47.640" end="00:00:50.559" style="s2">console.cloud.google.com up here as you</p>
+<p begin="00:00:49.760" end="00:00:52.640" style="s2">can see</p>
+<p begin="00:00:50.559" end="00:00:54.640" style="s2">and what we want to do is click on the</p>
+<p begin="00:00:52.640" end="00:00:57.600" style="s2">navigation menu on the left and go</p>
+<p begin="00:00:54.640" end="00:00:59.359" style="s2">down to the compute engine in here we</p>
+<p begin="00:00:57.600" end="00:01:01.920" style="s2">want to create a virtual</p>
+<p begin="00:00:59.359" end="00:01:03.600" style="s2">machine instance a vm instance so go</p>
+<p begin="00:01:01.920" end="00:01:06.000" style="s2">ahead and click on create</p>
+<p begin="00:01:03.600" end="00:01:07.920" style="s2">and you can call your instance whatever</p>
+<p begin="00:01:06.000" end="00:01:12.159" style="s2">you want i&#39;m going to call mine</p>
+<p begin="00:01:07.920" end="00:01:14.159" style="s2">wordpress test okay now here is where</p>
+<p begin="00:01:12.159" end="00:01:15.680" style="s2">some of those restrictions are going to</p>
+<p begin="00:01:14.159" end="00:01:17.600" style="s2">take place as we define</p>
+<p begin="00:01:15.680" end="00:01:19.520" style="s2">our server i&#39;ll put something up on the</p>
+<p begin="00:01:17.600" end="00:01:21.119" style="s2">screen here that will</p>
+<p begin="00:01:19.520" end="00:01:23.280" style="s2">that we can reference as we build our</p>
+<p begin="00:01:21.119" end="00:01:24.320" style="s2">server so basically the region we are</p>
+<p begin="00:01:23.280" end="00:01:27.840" style="s2">allowed to be in</p>
+<p begin="00:01:24.320" end="00:01:30.000" style="s2">is either oregon iowa or south carolina</p>
+<p begin="00:01:27.840" end="00:01:31.520" style="s2">so we have iowa selected here that is</p>
+<p begin="00:01:30.000" end="00:01:33.040" style="s2">fine for now and you can pick whatever</p>
+<p begin="00:01:31.520" end="00:01:36.159" style="s2">zone you want within iowa</p>
+<p begin="00:01:33.040" end="00:01:38.320" style="s2">i&#39;ll stick with the default a now as far</p>
+<p begin="00:01:36.159" end="00:01:40.000" style="s2">as the machine configuration we want to</p>
+<p begin="00:01:38.320" end="00:01:43.119" style="s2">make sure that we&#39;re picking</p>
+<p begin="00:01:40.000" end="00:01:45.200" style="s2">the n1 first generation which is an</p>
+<p begin="00:01:43.119" end="00:01:46.640" style="s2">intel skylike cpu</p>
+<p begin="00:01:45.200" end="00:01:48.640" style="s2">so make sure you select that and we&#39;ll</p>
+<p begin="00:01:46.640" end="00:01:51.119" style="s2">go ahead and expand these details</p>
+<p begin="00:01:48.640" end="00:01:53.200" style="s2">right now please ignore these pricings</p>
+<p begin="00:01:51.119" end="00:01:54.399" style="s2">this is going to be</p>
+<p begin="00:01:53.200" end="00:01:56.000" style="s2">we&#39;re going to get this down to zero</p>
+<p begin="00:01:54.399" end="00:01:57.200" style="s2">dollars well technically around five</p>
+<p begin="00:01:56.000" end="00:01:59.520" style="s2">dollars per month but</p>
+<p begin="00:01:57.200" end="00:02:00.960" style="s2">that&#39;s going to be absolutely free for</p>
+<p begin="00:01:59.520" end="00:02:01.439" style="s2">you now the next thing you want to</p>
+<p begin="00:02:00.960" end="00:02:03.840" style="s2">change</p>
+<p begin="00:02:01.439" end="00:02:04.719" style="s2">is the machine type this one we want the</p>
+<p begin="00:02:03.840" end="00:02:07.119" style="s2">f1</p>
+<p begin="00:02:04.719" end="00:02:08.000" style="s2">micro instance which as i referenced</p>
+<p begin="00:02:07.119" end="00:02:10.720" style="s2">earlier it</p>
+<p begin="00:02:08.000" end="00:02:11.920" style="s2">is 614 megabytes of memory less than a</p>
+<p begin="00:02:10.720" end="00:02:14.000" style="s2">gigabyte of ram</p>
+<p begin="00:02:11.920" end="00:02:17.040" style="s2">that&#39;s okay go ahead and pick that we</p>
+<p begin="00:02:14.000" end="00:02:20.080" style="s2">are down to 4.28 cents per month</p>
+<p begin="00:02:17.040" end="00:02:23.280" style="s2">let&#39;s go change our</p>
+<p begin="00:02:20.080" end="00:02:25.760" style="s2">uh operating system and our disk</p>
+<p begin="00:02:23.280" end="00:02:26.560" style="s2">drive our disk space so we can do that</p>
+<p begin="00:02:25.760" end="00:02:28.640" style="s2">in here</p>
+<p begin="00:02:26.560" end="00:02:29.680" style="s2">and i&#39;m gonna pick ubuntu you can pick</p>
+<p begin="00:02:28.640" end="00:02:32.080" style="s2">any of these without</p>
+<p begin="00:02:29.680" end="00:02:33.680" style="s2">um i think without any extra charge so</p>
+<p begin="00:02:32.080" end="00:02:35.360" style="s2">i&#39;m gonna pick ubuntu</p>
+<p begin="00:02:33.680" end="00:02:37.040" style="s2">and the version i&#39;m gonna select is</p>
+<p begin="00:02:35.360" end="00:02:40.640" style="s2">ubuntu 20.04</p>
+<p begin="00:02:37.040" end="00:02:41.920" style="s2">lts for long term support and as you can</p>
+<p begin="00:02:40.640" end="00:02:44.480" style="s2">still see on the screen here</p>
+<p begin="00:02:41.920" end="00:02:46.000" style="s2">the size the max size that you can have</p>
+<p begin="00:02:44.480" end="00:02:48.080" style="s2">here is 30 gigabytes so let&#39;s go ahead</p>
+<p begin="00:02:46.000" end="00:02:50.879" style="s2">and take advantage of that</p>
+<p begin="00:02:48.080" end="00:02:51.440" style="s2">select that to apply the changes and now</p>
+<p begin="00:02:50.879" end="00:02:54.400" style="s2">up here</p>
+<p begin="00:02:51.440" end="00:02:55.599" style="s2">our total is five dollars and eight</p>
+<p begin="00:02:54.400" end="00:02:58.319" style="s2">cents per month</p>
+<p begin="00:02:55.599" end="00:02:59.120" style="s2">but you can see here that your first 744</p>
+<p begin="00:02:58.319" end="00:03:01.840" style="s2">hours</p>
+<p begin="00:02:59.120" end="00:03:02.480" style="s2">of this instance usage are free this</p>
+<p begin="00:03:01.840" end="00:03:04.959" style="s2">month and so</p>
+<p begin="00:03:02.480" end="00:03:05.840" style="s2">what does that mean 744 hours well if</p>
+<p begin="00:03:04.959" end="00:03:09.280" style="s2">you do</p>
+<p begin="00:03:05.840" end="00:03:09.920" style="s2">uh 31 days in a month times 24 hours in</p>
+<p begin="00:03:09.280" end="00:03:12.720" style="s2">a day</p>
+<p begin="00:03:09.920" end="00:03:13.440" style="s2">you&#39;ll see that equals 744 hours which</p>
+<p begin="00:03:12.720" end="00:03:16.560" style="s2">means</p>
+<p begin="00:03:13.440" end="00:03:18.239" style="s2">essentially this is 100 free</p>
+<p begin="00:03:16.560" end="00:03:20.640" style="s2">you&#39;re not going to be charged anything</p>
+<p begin="00:03:18.239" end="00:03:23.120" style="s2">for creating this instance</p>
+<p begin="00:03:20.640" end="00:03:24.159" style="s2">now the only other thing we want to do</p>
+<p begin="00:03:23.120" end="00:03:27.640" style="s2">on this page</p>
+<p begin="00:03:24.159" end="00:03:29.280" style="s2">is to make sure that we allow http and</p>
+<p begin="00:03:27.640" end="00:03:31.760" style="s2">https</p>
+<p begin="00:03:29.280" end="00:03:34.159" style="s2">traffic but other than that we&#39;re good</p>
+<p begin="00:03:31.760" end="00:03:37.760" style="s2">to go so let&#39;s go ahead and create this</p>
+<p begin="00:03:34.159" end="00:03:40.720" style="s2">virtual machine and this will take</p>
+<p begin="00:03:37.760" end="00:03:41.920" style="s2">i&#39;ve seen anywhere from 20 seconds up to</p>
+<p begin="00:03:40.720" end="00:03:42.959" style="s2">a couple minutes so</p>
+<p begin="00:03:41.920" end="00:03:44.239" style="s2">instead of wasting your time i&#39;m going</p>
+<p begin="00:03:42.959" end="00:03:45.920" style="s2">to pause the video and i&#39;ll get back</p>
+<p begin="00:03:44.239" end="00:03:47.680" style="s2">with you when it finishes all right guys</p>
+<p begin="00:03:45.920" end="00:03:49.920" style="s2">in about 15 seconds later we&#39;re good to</p>
+<p begin="00:03:47.680" end="00:03:51.760" style="s2">go our instance has been created</p>
+<p begin="00:03:49.920" end="00:03:53.840" style="s2">as you can see here wordpress test</p>
+<p begin="00:03:51.760" end="00:03:56.400" style="s2">within the iowa zone</p>
+<p begin="00:03:53.840" end="00:03:58.239" style="s2">and it has this external ip address</p>
+<p begin="00:03:56.400" end="00:04:00.159" style="s2">that&#39;s listed here now this is the point</p>
+<p begin="00:03:58.239" end="00:04:01.920" style="s2">in the tutorial where if you do want to</p>
+<p begin="00:04:00.159" end="00:04:04.159" style="s2">associate a domain name</p>
+<p begin="00:04:01.920" end="00:04:05.760" style="s2">with this server we&#39;re going to go ahead</p>
+<p begin="00:04:04.159" end="00:04:07.200" style="s2">and do that if not you can go ahead and</p>
+<p begin="00:04:05.760" end="00:04:09.439" style="s2">skip through this part</p>
+<p begin="00:04:07.200" end="00:04:11.599" style="s2">what i&#39;m going to do is copy this ip</p>
+<p begin="00:04:09.439" end="00:04:13.760" style="s2">address this external ip address</p>
+<p begin="00:04:11.599" end="00:04:16.320" style="s2">and go to the place where i bought my</p>
+<p begin="00:04:13.760" end="00:04:18.160" style="s2">domain name which is dreamhost</p>
+<p begin="00:04:16.320" end="00:04:20.160" style="s2">and this will work anywhere where you</p>
+<p begin="00:04:18.160" end="00:04:21.120" style="s2">get your domain name the same concept</p>
+<p begin="00:04:20.160" end="00:04:22.880" style="s2">will apply</p>
+<p begin="00:04:21.120" end="00:04:24.800" style="s2">all you have to really do is come into</p>
+<p begin="00:04:22.880" end="00:04:28.160" style="s2">your dns settings</p>
+<p begin="00:04:24.800" end="00:04:28.720" style="s2">and create an a record for your ip</p>
+<p begin="00:04:28.160" end="00:04:31.919" style="s2">address</p>
+<p begin="00:04:28.720" end="00:04:32.880" style="s2">so the the type is the type of the</p>
+<p begin="00:04:31.919" end="00:04:34.639" style="s2">record is a</p>
+<p begin="00:04:32.880" end="00:04:36.080" style="s2">and the value is going to be the ip</p>
+<p begin="00:04:34.639" end="00:04:37.440" style="s2">address so we&#39;ll go ahead and add that</p>
+<p begin="00:04:36.080" end="00:04:39.199" style="s2">record</p>
+<p begin="00:04:37.440" end="00:04:42.120" style="s2">and there&#39;s one more record that we want</p>
+<p begin="00:04:39.199" end="00:04:46.120" style="s2">to add and that&#39;s going to be for the</p>
+<p begin="00:04:42.120" end="00:04:47.919" style="s2">www version of our website so</p>
+<p begin="00:04:46.120" end="00:04:49.360" style="s2">www.tonyflorida.me that&#39;s the domain</p>
+<p begin="00:04:47.919" end="00:04:51.040" style="s2">name that we&#39;re working with let&#39;s add</p>
+<p begin="00:04:49.360" end="00:04:53.120" style="s2">that record as well</p>
+<p begin="00:04:51.040" end="00:04:54.320" style="s2">and this takes some time to propagate so</p>
+<p begin="00:04:53.120" end="00:04:56.560" style="s2">it&#39;s a good thing we&#39;re doing this</p>
+<p begin="00:04:54.320" end="00:04:58.080" style="s2">at this point in the tutorial now we</p>
+<p begin="00:04:56.560" end="00:05:00.199" style="s2">have two</p>
+<p begin="00:04:58.080" end="00:05:01.680" style="s2">a records for our domain name</p>
+<p begin="00:05:00.199" end="00:05:06.039" style="s2">tonyflorida.me</p>
+<p begin="00:05:01.680" end="00:05:07.199" style="s2">one for just tonyflorida.me and one for</p>
+<p begin="00:05:06.039" end="00:05:09.600" style="s2">www.tonyflorida.me</p>
+<p begin="00:05:07.199" end="00:05:10.560" style="s2">both pointing to the ip address of our</p>
+<p begin="00:05:09.600" end="00:05:12.000" style="s2">server</p>
+<p begin="00:05:10.560" end="00:05:13.919" style="s2">okay now that that&#39;s out of the way</p>
+<p begin="00:05:12.000" end="00:05:14.960" style="s2">let&#39;s go back over to the google cloud</p>
+<p begin="00:05:13.919" end="00:05:19.600" style="s2">platform</p>
+<p begin="00:05:14.960" end="00:05:21.520" style="s2">and log into our server via ssh now</p>
+<p begin="00:05:19.600" end="00:05:23.600" style="s2">typically you would do this with either</p>
+<p begin="00:05:21.520" end="00:05:24.320" style="s2">the gcloud command i&#39;ll have a video on</p>
+<p begin="00:05:23.600" end="00:05:27.360" style="s2">that</p>
+<p begin="00:05:24.320" end="00:05:28.400" style="s2">or you could use your terminal window or</p>
+<p begin="00:05:27.360" end="00:05:30.880" style="s2">putty if you&#39;re using</p>
+<p begin="00:05:28.400" end="00:05:32.560" style="s2">a windows computer but because we don&#39;t</p>
+<p begin="00:05:30.880" end="00:05:34.880" style="s2">know the root password yet</p>
+<p begin="00:05:32.560" end="00:05:36.160" style="s2">we have to do it in a web browser and</p>
+<p begin="00:05:34.880" end="00:05:38.000" style="s2">it&#39;s really cool they have it set up for</p>
+<p begin="00:05:36.160" end="00:05:39.600" style="s2">you where you could just click on that</p>
+<p begin="00:05:38.000" end="00:05:41.600" style="s2">and this will go ahead and transfer your</p>
+<p begin="00:05:39.600" end="00:05:43.600" style="s2">ssh keys to the vm which is</p>
+<p begin="00:05:41.600" end="00:05:45.360" style="s2">a secure way of connecting to the</p>
+<p begin="00:05:43.600" end="00:05:48.160" style="s2">virtual machine</p>
+<p begin="00:05:45.360" end="00:05:49.280" style="s2">again this will take just anywhere from</p>
+<p begin="00:05:48.160" end="00:05:51.440" style="s2">30 seconds to</p>
+<p begin="00:05:49.280" end="00:05:52.960" style="s2">a couple of minutes to start up so i&#39;ll</p>
+<p begin="00:05:51.440" end="00:05:54.000" style="s2">pause the video here and catch up with</p>
+<p begin="00:05:52.960" end="00:05:55.520" style="s2">you when it finishes</p>
+<p begin="00:05:54.000" end="00:05:57.759" style="s2">all right guys we&#39;re in we are logged</p>
+<p begin="00:05:55.520" end="00:05:59.199" style="s2">into the remote server via ssh</p>
+<p begin="00:05:57.759" end="00:06:01.840" style="s2">and as you can see here we are running</p>
+<p begin="00:05:59.199" end="00:06:02.639" style="s2">ubuntu 28.04 which is the operating</p>
+<p begin="00:06:01.840" end="00:06:04.479" style="s2">system that we</p>
+<p begin="00:06:02.639" end="00:06:06.639" style="s2">picked when we created this virtual</p>
+<p begin="00:06:04.479" end="00:06:07.840" style="s2">instance now the first thing we want to</p>
+<p begin="00:06:06.639" end="00:06:09.360" style="s2">do before we go ahead</p>
+<p begin="00:06:07.840" end="00:06:11.759" style="s2">and install wordpress and all the</p>
+<p begin="00:06:09.360" end="00:06:14.160" style="s2">dependencies is to update our system</p>
+<p begin="00:06:11.759" end="00:06:15.840" style="s2">and we can do that with sudo apt-get</p>
+<p begin="00:06:14.160" end="00:06:18.240" style="s2">update and sudo apt-get</p>
+<p begin="00:06:15.840" end="00:06:19.280" style="s2">upgrade so go ahead and execute that</p>
+<p begin="00:06:18.240" end="00:06:21.199" style="s2">command</p>
+<p begin="00:06:19.280" end="00:06:22.560" style="s2">by the way all of these commands in this</p>
+<p begin="00:06:21.199" end="00:06:24.160" style="s2">tutorial will be linked in the</p>
+<p begin="00:06:22.560" end="00:06:25.840" style="s2">description below</p>
+<p begin="00:06:24.160" end="00:06:27.440" style="s2">so you can copy and paste them instead</p>
+<p begin="00:06:25.840" end="00:06:30.120" style="s2">of typing them from the screen</p>
+<p begin="00:06:27.440" end="00:06:32.639" style="s2">they will be on my blog at</p>
+<p begin="00:06:30.120" end="00:06:34.479" style="s2">tonyteaches.tech so check those out</p>
+<p begin="00:06:32.639" end="00:06:36.160" style="s2">when this is finished i&#39;m going to hit y</p>
+<p begin="00:06:34.479" end="00:06:37.360" style="s2">to continue when this is finished i&#39;ll</p>
+<p begin="00:06:36.160" end="00:06:39.039" style="s2">catch back up with you</p>
+<p begin="00:06:37.360" end="00:06:40.400" style="s2">all right our system is up to date that</p>
+<p begin="00:06:39.039" end="00:06:40.960" style="s2">has finished and the next thing we want</p>
+<p begin="00:06:40.400" end="00:06:43.280" style="s2">to do</p>
+<p begin="00:06:40.960" end="00:06:44.960" style="s2">is to install a web server we&#39;re going</p>
+<p begin="00:06:43.280" end="00:06:46.880" style="s2">to be using nginx</p>
+<p begin="00:06:44.960" end="00:06:48.960" style="s2">a database we&#39;re going to be using maria</p>
+<p begin="00:06:46.880" end="00:06:51.680" style="s2">database which is a mysql database</p>
+<p begin="00:06:48.960" end="00:06:52.880" style="s2">and php all of which are necessary for</p>
+<p begin="00:06:51.680" end="00:06:54.720" style="s2">wordpress to run</p>
+<p begin="00:06:52.880" end="00:06:57.360" style="s2">so let&#39;s go ahead and do that with this</p>
+<p begin="00:06:54.720" end="00:06:59.680" style="s2">command here apt-get install nginx maria</p>
+<p begin="00:06:57.360" end="00:07:03.120" style="s2">database server phpfpm</p>
+<p begin="00:06:59.680" end="00:07:04.560" style="s2">and phpmysql so hit enter</p>
+<p begin="00:07:03.120" end="00:07:06.720" style="s2">and this will take a little bit longer</p>
+<p begin="00:07:04.560" end="00:07:09.039" style="s2">it&#39;s 199 megabytes of space</p>
+<p begin="00:07:06.720" end="00:07:10.400" style="s2">same thing as before i will pause the</p>
+<p begin="00:07:09.039" end="00:07:11.039" style="s2">video catch back up to you when it</p>
+<p begin="00:07:10.400" end="00:07:12.720" style="s2">finishes</p>
+<p begin="00:07:11.039" end="00:07:14.560" style="s2">okay now that we have all that software</p>
+<p begin="00:07:12.720" end="00:07:17.919" style="s2">installed let&#39;s check what version</p>
+<p begin="00:07:14.560" end="00:07:19.919" style="s2">we have for php and that is 7.4</p>
+<p begin="00:07:17.919" end="00:07:22.080" style="s2">we&#39;ll use this a little bit later and</p>
+<p begin="00:07:19.919" end="00:07:22.800" style="s2">let&#39;s check our mysql version like i</p>
+<p begin="00:07:22.080" end="00:07:26.880" style="s2">said we&#39;re using</p>
+<p begin="00:07:22.800" end="00:07:30.000" style="s2">maria database and that is version 15.1</p>
+<p begin="00:07:26.880" end="00:07:31.599" style="s2">now let&#39;s work on our database okay</p>
+<p begin="00:07:30.000" end="00:07:34.080" style="s2">first let&#39;s secure a database within</p>
+<p begin="00:07:31.599" end="00:07:36.400" style="s2">mysql secure installation command</p>
+<p begin="00:07:34.080" end="00:07:38.639" style="s2">and this is asking us for our current</p>
+<p begin="00:07:36.400" end="00:07:41.440" style="s2">root password we don&#39;t have one</p>
+<p begin="00:07:38.639" end="00:07:44.479" style="s2">but we do want to set one so type y and</p>
+<p begin="00:07:41.440" end="00:07:46.720" style="s2">go ahead and type a password and confirm</p>
+<p begin="00:07:44.479" end="00:07:48.639" style="s2">that password</p>
+<p begin="00:07:46.720" end="00:07:50.080" style="s2">and pretty much for the rest of this we</p>
+<p begin="00:07:48.639" end="00:07:53.520" style="s2">will type in y</p>
+<p begin="00:07:50.080" end="00:07:54.319" style="s2">to accept the defaults and this again is</p>
+<p begin="00:07:53.520" end="00:07:57.360" style="s2">securing</p>
+<p begin="00:07:54.319" end="00:07:59.759" style="s2">our mysql database installation</p>
+<p begin="00:07:57.360" end="00:08:00.400" style="s2">now that we have that all set up we can</p>
+<p begin="00:07:59.759" end="00:08:03.440" style="s2">go ahead</p>
+<p begin="00:08:00.400" end="00:08:04.879" style="s2">and log into our mysql server with sudo</p>
+<p begin="00:08:03.440" end="00:08:08.639" style="s2">mic sql dash u</p>
+<p begin="00:08:04.879" end="00:08:11.599" style="s2">for user root p for password type in the</p>
+<p begin="00:08:08.639" end="00:08:14.400" style="s2">password that you just created</p>
+<p begin="00:08:11.599" end="00:08:15.360" style="s2">and now we are we have a my sequel</p>
+<p begin="00:08:14.400" end="00:08:17.039" style="s2">console</p>
+<p begin="00:08:15.360" end="00:08:19.520" style="s2">and what we want to do is to create a</p>
+<p begin="00:08:17.039" end="00:08:20.960" style="s2">database for our wordpress website</p>
+<p begin="00:08:19.520" end="00:08:23.120" style="s2">again all of these commands will be</p>
+<p begin="00:08:20.960" end="00:08:23.919" style="s2">available on my website which is linked</p>
+<p begin="00:08:23.120" end="00:08:26.080" style="s2">below</p>
+<p begin="00:08:23.919" end="00:08:27.120" style="s2">first thing i want to do is to create a</p>
+<p begin="00:08:26.080" end="00:08:30.240" style="s2">database called</p>
+<p begin="00:08:27.120" end="00:08:31.759" style="s2">example underscore db and then we want</p>
+<p begin="00:08:30.240" end="00:08:34.800" style="s2">to create a user</p>
+<p begin="00:08:31.759" end="00:08:37.440" style="s2">with a password with create user</p>
+<p begin="00:08:34.800" end="00:08:38.719" style="s2">his name is going to be example username</p>
+<p begin="00:08:37.440" end="00:08:40.959" style="s2">and he is going to</p>
+<p begin="00:08:38.719" end="00:08:42.719" style="s2">you have a password that is example</p>
+<p begin="00:08:40.959" end="00:08:44.560" style="s2">underscore password</p>
+<p begin="00:08:42.719" end="00:08:46.560" style="s2">in reality you&#39;re going to want to make</p>
+<p begin="00:08:44.560" end="00:08:48.640" style="s2">these uh more secure</p>
+<p begin="00:08:46.560" end="00:08:50.720" style="s2">and suiting to your needs as far as the</p>
+<p begin="00:08:48.640" end="00:08:53.760" style="s2">names and the passwords are concerned</p>
+<p begin="00:08:50.720" end="00:08:54.399" style="s2">anyway let&#39;s grant all privileges on the</p>
+<p begin="00:08:53.760" end="00:08:57.600" style="s2">database</p>
+<p begin="00:08:54.399" end="00:09:00.720" style="s2">to this user as long as he&#39;s on this</p>
+<p begin="00:08:57.600" end="00:09:02.959" style="s2">local host so execute that and then</p>
+<p begin="00:09:00.720" end="00:09:04.480" style="s2">finally we want to flush the privileges</p>
+<p begin="00:09:02.959" end="00:09:06.640" style="s2">which is essentially</p>
+<p begin="00:09:04.480" end="00:09:08.080" style="s2">applying our changes and then we can</p>
+<p begin="00:09:06.640" end="00:09:11.519" style="s2">exit out of our</p>
+<p begin="00:09:08.080" end="00:09:15.279" style="s2">mysql command prompt now let&#39;s go</p>
+<p begin="00:09:11.519" end="00:09:18.800" style="s2">into the var www directory</p>
+<p begin="00:09:15.279" end="00:09:20.880" style="s2">and in here is the default place for</p>
+<p begin="00:09:18.800" end="00:09:22.080" style="s2">websites all the website files are</p>
+<p begin="00:09:20.880" end="00:09:24.000" style="s2">usually living under</p>
+<p begin="00:09:22.080" end="00:09:25.920" style="s2">here as you can see there&#39;s an html</p>
+<p begin="00:09:24.000" end="00:09:28.560" style="s2">directory we&#39;re going to go ahead and</p>
+<p begin="00:09:25.920" end="00:09:31.120" style="s2">make our wordpress website in a</p>
+<p begin="00:09:28.560" end="00:09:33.600" style="s2">directory under here called wordpress so</p>
+<p begin="00:09:31.120" end="00:09:35.360" style="s2">let&#39;s go to the official wordpress</p>
+<p begin="00:09:33.600" end="00:09:36.240" style="s2">website we&#39;re going to use the wget</p>
+<p begin="00:09:35.360" end="00:09:38.800" style="s2">command</p>
+<p begin="00:09:36.240" end="00:09:39.839" style="s2">to download the latest version of</p>
+<p begin="00:09:38.800" end="00:09:43.839" style="s2">wordpress as</p>
+<p begin="00:09:39.839" end="00:09:47.279" style="s2">in archive so execute that command here</p>
+<p begin="00:09:43.839" end="00:09:49.600" style="s2">and once we have that we can go ahead</p>
+<p begin="00:09:47.279" end="00:09:50.399" style="s2">and extract its code right now it&#39;s just</p>
+<p begin="00:09:49.600" end="00:09:52.640" style="s2">going to be</p>
+<p begin="00:09:50.399" end="00:09:53.600" style="s2">a tar file which is basically like a zip</p>
+<p begin="00:09:52.640" end="00:09:56.959" style="s2">file</p>
+<p begin="00:09:53.600" end="00:10:00.080" style="s2">we can extract that with pseudo tar zx</p>
+<p begin="00:09:56.959" end="00:10:03.279" style="s2">vf the name of the archive</p>
+<p begin="00:10:00.080" end="00:10:05.760" style="s2">and then finally we want to remove</p>
+<p begin="00:10:03.279" end="00:10:08.360" style="s2">that tar file because we don&#39;t need it</p>
+<p begin="00:10:05.760" end="00:10:10.480" style="s2">anymore so we can do that with rm</p>
+<p begin="00:10:08.360" end="00:10:12.000" style="s2">latest.tar.gz so now we have that</p>
+<p begin="00:10:10.480" end="00:10:15.200" style="s2">wordpress directory</p>
+<p begin="00:10:12.000" end="00:10:17.399" style="s2">we want to change the owner of this</p>
+<p begin="00:10:15.200" end="00:10:22.079" style="s2">wordpress directory to the</p>
+<p begin="00:10:17.399" end="00:10:24.160" style="s2">www data user in the www data group</p>
+<p begin="00:10:22.079" end="00:10:25.839" style="s2">that&#39;s what this syntax does right here</p>
+<p begin="00:10:24.160" end="00:10:27.440" style="s2">we&#39;re going to do that recursively for</p>
+<p begin="00:10:25.839" end="00:10:28.480" style="s2">everything inside of the wordpress</p>
+<p begin="00:10:27.440" end="00:10:32.000" style="s2">directory so</p>
+<p begin="00:10:28.480" end="00:10:33.680" style="s2">go ahead and execute that now that&#39;s all</p>
+<p begin="00:10:32.000" end="00:10:35.519" style="s2">we need to do for wordpress so far let&#39;s</p>
+<p begin="00:10:33.680" end="00:10:38.640" style="s2">just take a peek inside of here</p>
+<p begin="00:10:35.519" end="00:10:40.800" style="s2">we have all of these php files</p>
+<p begin="00:10:38.640" end="00:10:41.920" style="s2">and other configuration files that are</p>
+<p begin="00:10:40.800" end="00:10:44.640" style="s2">necessary for</p>
+<p begin="00:10:41.920" end="00:10:45.519" style="s2">wordpress to run default out of the box</p>
+<p begin="00:10:44.640" end="00:10:48.000" style="s2">so</p>
+<p begin="00:10:45.519" end="00:10:49.200" style="s2">let&#39;s go ahead and move on and work on</p>
+<p begin="00:10:48.000" end="00:10:51.040" style="s2">our web server</p>
+<p begin="00:10:49.200" end="00:10:53.360" style="s2">again that we&#39;re going to be using nginx</p>
+<p begin="00:10:51.040" end="00:10:56.000" style="s2">so we can go into the etc</p>
+<p begin="00:10:53.360" end="00:10:57.040" style="s2">nginx directory and in here we have a</p>
+<p begin="00:10:56.000" end="00:10:58.480" style="s2">few directories and</p>
+<p begin="00:10:57.040" end="00:11:00.320" style="s2">configuration files but we&#39;re going to</p>
+<p begin="00:10:58.480" end="00:11:01.519" style="s2">be working out of the sites available</p>
+<p begin="00:11:00.320" end="00:11:03.200" style="s2">directory</p>
+<p begin="00:11:01.519" end="00:11:04.560" style="s2">and in here we have our default</p>
+<p begin="00:11:03.200" end="00:11:06.079" style="s2">configuration file</p>
+<p begin="00:11:04.560" end="00:11:08.000" style="s2">we&#39;re going to actually make a new</p>
+<p begin="00:11:06.079" end="00:11:10.279" style="s2">configuration file i&#39;m going to call</p>
+<p begin="00:11:08.000" end="00:11:12.480" style="s2">mayan</p>
+<p begin="00:11:10.279" end="00:11:14.240" style="s2">tonyflorida.me.com and</p>
+<p begin="00:11:12.480" end="00:11:16.160" style="s2">it&#39;s just usually the name of your</p>
+<p begin="00:11:14.240" end="00:11:18.160" style="s2">domain name followed by</p>
+<p begin="00:11:16.160" end="00:11:20.000" style="s2">dot conf and i&#39;m going to be using the</p>
+<p begin="00:11:18.160" end="00:11:21.680" style="s2">vim text editor if you don&#39;t know how to</p>
+<p begin="00:11:20.000" end="00:11:22.959" style="s2">use that i&#39;ll have a video</p>
+<p begin="00:11:21.680" end="00:11:24.959" style="s2">about how to use that or you can use a</p>
+<p begin="00:11:22.959" end="00:11:26.000" style="s2">different text editor to edit this file</p>
+<p begin="00:11:24.959" end="00:11:29.040" style="s2">so</p>
+<p begin="00:11:26.000" end="00:11:30.800" style="s2">what i&#39;m going to do is copy in the</p>
+<p begin="00:11:29.040" end="00:11:31.600" style="s2">configuration file content and paste</p>
+<p begin="00:11:30.800" end="00:11:33.360" style="s2">that in</p>
+<p begin="00:11:31.600" end="00:11:34.800" style="s2">and this is a little overwhelming for a</p>
+<p begin="00:11:33.360" end="00:11:35.920" style="s2">lot of people but let&#39;s just go through</p>
+<p begin="00:11:34.800" end="00:11:37.680" style="s2">it real quick</p>
+<p begin="00:11:35.920" end="00:11:40.000" style="s2">we&#39;re going to be listening on port 80</p>
+<p begin="00:11:37.680" end="00:11:41.519" style="s2">which is the default http port</p>
+<p begin="00:11:40.000" end="00:11:44.079" style="s2">we have our server name which is my</p>
+<p begin="00:11:41.519" end="00:11:45.760" style="s2">domain name and the www</p>
+<p begin="00:11:44.079" end="00:11:47.680" style="s2">version of the domain name which you saw</p>
+<p begin="00:11:45.760" end="00:11:49.760" style="s2">earlier we already set up those dnsa</p>
+<p begin="00:11:47.680" end="00:11:52.079" style="s2">records to point to this ip address</p>
+<p begin="00:11:49.760" end="00:11:53.200" style="s2">so that&#39;s all linked up our wordpress</p>
+<p begin="00:11:52.079" end="00:11:56.480" style="s2">website exists</p>
+<p begin="00:11:53.200" end="00:11:59.440" style="s2">at this directory on our file system</p>
+<p begin="00:11:56.480" end="00:12:00.560" style="s2">and our index of our website the first</p>
+<p begin="00:11:59.440" end="00:12:04.079" style="s2">the home page</p>
+<p begin="00:12:00.560" end="00:12:05.519" style="s2">uh file is called index.php now the only</p>
+<p begin="00:12:04.079" end="00:12:09.040" style="s2">other thing i want to point out here</p>
+<p begin="00:12:05.519" end="00:12:10.880" style="s2">is that we are using php version 7.4</p>
+<p begin="00:12:09.040" end="00:12:13.120" style="s2">like we checked earlier so that&#39;s why we</p>
+<p begin="00:12:10.880" end="00:12:15.279" style="s2">have this referenced up here</p>
+<p begin="00:12:13.120" end="00:12:16.560" style="s2">okay so let&#39;s go ahead and save that</p>
+<p begin="00:12:15.279" end="00:12:18.880" style="s2">file</p>
+<p begin="00:12:16.560" end="00:12:19.839" style="s2">and in order for those changes to be</p>
+<p begin="00:12:18.880" end="00:12:22.880" style="s2">visible</p>
+<p begin="00:12:19.839" end="00:12:24.560" style="s2">we have to sim link from the sites</p>
+<p begin="00:12:22.880" end="00:12:25.920" style="s2">available directory our configuration</p>
+<p begin="00:12:24.560" end="00:12:28.160" style="s2">file that we just created</p>
+<p begin="00:12:25.920" end="00:12:29.839" style="s2">to the site&#39;s enabled directory and we</p>
+<p begin="00:12:28.160" end="00:12:33.519" style="s2">can do that with the ln</p>
+<p begin="00:12:29.839" end="00:12:36.639" style="s2">s command so that looks good and finally</p>
+<p begin="00:12:33.519" end="00:12:38.320" style="s2">let&#39;s restart our nginx web server with</p>
+<p begin="00:12:36.639" end="00:12:42.480" style="s2">system ctl restart</p>
+<p begin="00:12:38.320" end="00:12:44.480" style="s2">nginx and we didn&#39;t get any</p>
+<p begin="00:12:42.480" end="00:12:46.240" style="s2">output no errors or anything like that</p>
+<p begin="00:12:44.480" end="00:12:49.120" style="s2">so i think we&#39;re good to go</p>
+<p begin="00:12:46.240" end="00:12:51.040" style="s2">let&#39;s go ahead and get out of this</p>
+<p begin="00:12:49.120" end="00:12:54.480" style="s2">console window for now</p>
+<p begin="00:12:51.040" end="00:12:58.320" style="s2">open up a new tab and go to tony</p>
+<p begin="00:12:54.480" end="00:12:58.320" style="s2">florida dot me</p>
+<p begin="00:12:58.399" end="00:13:02.639" style="s2">and this is great this is the</p>
+<p begin="00:13:00.399" end="00:13:06.399" style="s2">installation for wordpress</p>
+<p begin="00:13:02.639" end="00:13:08.639" style="s2">it&#39;s reading our system are i</p>
+<p begin="00:13:06.399" end="00:13:11.040" style="s2">it&#39;s basically has gone to the ip</p>
+<p begin="00:13:08.639" end="00:13:13.760" style="s2">address looked to the dns lookup</p>
+<p begin="00:13:11.040" end="00:13:14.560" style="s2">and is now serving the files from the</p>
+<p begin="00:13:13.760" end="00:13:16.639" style="s2">var</p>
+<p begin="00:13:14.560" end="00:13:18.000" style="s2">www wordpress directory so let&#39;s go</p>
+<p begin="00:13:16.639" end="00:13:18.639" style="s2">ahead and go through this installation</p>
+<p begin="00:13:18.000" end="00:13:21.839" style="s2">we can click</p>
+<p begin="00:13:18.639" end="00:13:23.680" style="s2">continue for english we have all of this</p>
+<p begin="00:13:21.839" end="00:13:24.560" style="s2">information so let&#39;s go ahead and set</p>
+<p begin="00:13:23.680" end="00:13:26.079" style="s2">everything up</p>
+<p begin="00:13:24.560" end="00:13:28.399" style="s2">what we&#39;re doing here is we&#39;re</p>
+<p begin="00:13:26.079" end="00:13:29.920" style="s2">connecting wordpress to the database</p>
+<p begin="00:13:28.399" end="00:13:33.839" style="s2">that we created so</p>
+<p begin="00:13:29.920" end="00:13:36.880" style="s2">the name of our database is called</p>
+<p begin="00:13:33.839" end="00:13:40.560" style="s2">example underscore db</p>
+<p begin="00:13:36.880" end="00:13:43.760" style="s2">our username is wordpress</p>
+<p begin="00:13:40.560" end="00:13:46.399" style="s2">wordpress username our password is</p>
+<p begin="00:13:43.760" end="00:13:46.399" style="s2">wordpress</p>
+<p begin="00:13:46.839" end="00:13:52.480" style="s2">password and uh no i&#39;m sorry it&#39;s</p>
+<p begin="00:13:49.920" end="00:13:56.320" style="s2">example password</p>
+<p begin="00:13:52.480" end="00:13:58.079" style="s2">and example username i got that wrong</p>
+<p begin="00:13:56.320" end="00:14:00.160" style="s2">and our database host is localhost</p>
+<p begin="00:13:58.079" end="00:14:01.600" style="s2">that&#39;s fine and you can change the table</p>
+<p begin="00:14:00.160" end="00:14:03.680" style="s2">of prefix to whatever you want let&#39;s go</p>
+<p begin="00:14:01.600" end="00:14:06.160" style="s2">ahead and submit this</p>
+<p begin="00:14:03.680" end="00:14:07.279" style="s2">and this looks good all right sparky</p>
+<p begin="00:14:06.160" end="00:14:08.320" style="s2">you&#39;ve made it through this part of the</p>
+<p begin="00:14:07.279" end="00:14:10.000" style="s2">installation</p>
+<p begin="00:14:08.320" end="00:14:11.839" style="s2">it can communicate with your database</p>
+<p begin="00:14:10.000" end="00:14:13.760" style="s2">let&#39;s run the installation</p>
+<p begin="00:14:11.839" end="00:14:15.519" style="s2">and this is where we&#39;re going to define</p>
+<p begin="00:14:13.760" end="00:14:17.120" style="s2">our website so what&#39;s the title of our</p>
+<p begin="00:14:15.519" end="00:14:20.560" style="s2">website i&#39;m just going to call it</p>
+<p begin="00:14:17.120" end="00:14:23.279" style="s2">tony florida my username for</p>
+<p begin="00:14:20.560" end="00:14:24.480" style="s2">logging into wordpress i&#39;ll say is tony</p>
+<p begin="00:14:23.279" end="00:14:26.240" style="s2">florida</p>
+<p begin="00:14:24.480" end="00:14:28.000" style="s2">and this looks like a good password i&#39;ll</p>
+<p begin="00:14:26.240" end="00:14:31.920" style="s2">copy that onto my clipboard</p>
+<p begin="00:14:28.000" end="00:14:34.639" style="s2">and my email tony at tony teaches</p>
+<p begin="00:14:31.920" end="00:14:36.639" style="s2">dot tech okay so let&#39;s go ahead and</p>
+<p begin="00:14:34.639" end="00:14:38.959" style="s2">install wordpress</p>
+<p begin="00:14:36.639" end="00:14:40.240" style="s2">and just a couple seconds later we&#39;re</p>
+<p begin="00:14:38.959" end="00:14:43.040" style="s2">good to go let&#39;s log</p>
+<p begin="00:14:40.240" end="00:14:45.279" style="s2">into wordpress username again tony</p>
+<p begin="00:14:43.040" end="00:14:47.519" style="s2">florida password i can paste that from</p>
+<p begin="00:14:45.279" end="00:14:50.320" style="s2">my clipboard click that remember me</p>
+<p begin="00:14:47.519" end="00:14:52.639" style="s2">and log in this is the wordpress admin</p>
+<p begin="00:14:50.320" end="00:14:54.160" style="s2">dashboard this is where you write posts</p>
+<p begin="00:14:52.639" end="00:14:55.760" style="s2">you can come in here and write a post a</p>
+<p begin="00:14:54.160" end="00:14:57.360" style="s2">new blog post</p>
+<p begin="00:14:55.760" end="00:14:59.199" style="s2">and they already have a hello world blog</p>
+<p begin="00:14:57.360" end="00:15:02.480" style="s2">post in there but uh</p>
+<p begin="00:14:59.199" end="00:15:05.600" style="s2">that&#39;s fine we&#39;ll just say welcome</p>
+<p begin="00:15:02.480" end="00:15:08.320" style="s2">to google cloud platform</p>
+<p begin="00:15:05.600" end="00:15:10.720" style="s2">we did it something like that so we&#39;ll</p>
+<p begin="00:15:08.320" end="00:15:13.120" style="s2">publish our first blog post here</p>
+<p begin="00:15:10.720" end="00:15:14.079" style="s2">and that will be available let&#39;s view</p>
+<p begin="00:15:13.120" end="00:15:16.079" style="s2">the post</p>
+<p begin="00:15:14.079" end="00:15:18.160" style="s2">here&#39;s our first blog post not much</p>
+<p begin="00:15:16.079" end="00:15:20.320" style="s2">there and you know if we go to our home</p>
+<p begin="00:15:18.160" end="00:15:21.839" style="s2">page here this is what that looks like</p>
+<p begin="00:15:20.320" end="00:15:23.760" style="s2">there&#39;s a lot of configuration that you</p>
+<p begin="00:15:21.839" end="00:15:26.560" style="s2">can do here as far as</p>
+<p begin="00:15:23.760" end="00:15:27.279" style="s2">the appearance adding some plugins all</p>
+<p begin="00:15:26.560" end="00:15:28.800" style="s2">that stuff</p>
+<p begin="00:15:27.279" end="00:15:31.279" style="s2">i have plenty of other videos on this</p>
+<p begin="00:15:28.800" end="00:15:33.759" style="s2">channel so check some of those out</p>
+<p begin="00:15:31.279" end="00:15:36.240" style="s2">but the one thing i do want to say here</p>
+<p begin="00:15:33.759" end="00:15:36.240" style="s2">is that</p>
+<p begin="00:15:36.639" end="00:15:40.240" style="s2">the i want to talk a little bit more</p>
+<p begin="00:15:38.079" end="00:15:42.959" style="s2">about the pricing so</p>
+<p begin="00:15:40.240" end="00:15:44.720" style="s2">as far as this is concerned if you don&#39;t</p>
+<p begin="00:15:42.959" end="00:15:47.759" style="s2">go above one gigabyte</p>
+<p begin="00:15:44.720" end="00:15:48.720" style="s2">per month of transfer out of your server</p>
+<p begin="00:15:47.759" end="00:15:51.440" style="s2">if you don&#39;t serve</p>
+<p begin="00:15:48.720" end="00:15:54.079" style="s2">more than one gigabyte of pages then you</p>
+<p begin="00:15:51.440" end="00:15:56.320" style="s2">won&#39;t pay a single cent for this website</p>
+<p begin="00:15:54.079" end="00:15:57.680" style="s2">but if you do go above that threshold</p>
+<p begin="00:15:56.320" end="00:16:00.320" style="s2">then you will be charged</p>
+<p begin="00:15:57.680" end="00:16:01.759" style="s2">12 cents per gigabyte okay i&#39;ll make</p>
+<p begin="00:16:00.320" end="00:16:03.680" style="s2">i&#39;ll have a whole other video on this</p>
+<p begin="00:16:01.759" end="00:16:05.120" style="s2">topic which you can check out here</p>
+<p begin="00:16:03.680" end="00:16:07.519" style="s2">if you want to go more in depth with</p>
+<p begin="00:16:05.120" end="00:16:08.800" style="s2">that i just want you guys to be aware of</p>
+<p begin="00:16:07.519" end="00:16:10.560" style="s2">that and then also if you want to</p>
+<p begin="00:16:08.800" end="00:16:12.320" style="s2">install an ssl certificate on your</p>
+<p begin="00:16:10.560" end="00:16:14.240" style="s2">wordpress website check out this video</p>
+<p begin="00:16:12.320" end="00:16:22.720" style="s2">here thank you guys for watching i&#39;ll</p>
+<p begin="00:16:14.240" end="00:16:24.800" style="s2">see you in the next video</p>
+<p begin="00:16:22.720" end="00:16:24.800" style="s2">you</p>
+</div>
+</body>
+</tt>
